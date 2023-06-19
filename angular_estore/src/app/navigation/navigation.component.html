@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="/">
+        <title>Navigation Bar</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="nav-welcome">
+                <h1>Welcome</h1>
+            </div>
+
+            <nav class="nav-links">
+                <ul>
+                    <li><a routerLink="/home">Home</a></li>
+                    <li><a routerLink="/products">Products</a></li>
+                    <li><a routerLink="/cart">Cart</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-search">
+                <div class="search-wrapper">
+                    <form [formGroup]="searchForm" (ngSubmit)="search()">
+                        <input formControlName="search" type="text" placeholder="Search"/>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
