@@ -1,2 +1,2 @@
 # my-estore-application
-Demonstrating my development skills
+Building upmy development skills
